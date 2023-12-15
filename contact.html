@@ -8,10 +8,11 @@
     <title>Montaha's cv</title>
     <link rel="stylesheet" href="Montaha'sPorfolio.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
 </head>
 
 <body>
-
+    
     <header class="header">
         <a href="#" class="logo">Montaha Jaballah</a>
 
@@ -24,24 +25,24 @@
 
 
 
-<section id="contact.html" class="contact">
+<section id="contact.html" class="contact"> 
 
     <h2>CONTACT Me !</h2>
-        <form action="traitement_formulaire.php" method="post">
+        <form action="traitement_formulaire.php" method="post" onsubmit="return verif(this)">
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required>
-    
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" required>
-    
+            <label for="cin">Numéro CIN (8 chiffres) :</label>
+            <input type="text" id="cin" name="cin" required>
             <label for="message">Message :</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-    
+      
             <input type="submit" value="Envoyer">
         </form>
     </section>
     </main>
-    
+
  <!-- SECTION: Footer -->
  <footer class="footer">
     <div class="footer__wrapper wrapper--large">
